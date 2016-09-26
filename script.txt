@@ -57,5 +57,5 @@ library(tidyr)
 	
 	#write to text file
 		file.create("tidyData.txt")
-		write.table(final, file = "tidyData", col.names = TRUE)
+		write.table(final, file = "tidyData.txt", col.names = TRUE)
 	
