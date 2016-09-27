@@ -1,0 +1,48 @@
+##CODE BOOK
+
+This data set extracted and tidied from Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+The six variables are;
+
+1.Subject:
+this is the first column of the data set. which is an Id variable for the 30 participants in the
+experiment. from the original explanation they are aged between 19-48 years
+
+2.Activity:
+this is a factor variable with six levels indicating what activites have been done by the partcipants
+they are, 
+"walking", 
+"walking_upstairs",
+"walking_downstairs",
+"sitting",
+"standing",
+"laying".
+
+3. signal:
+this is a eight level factor variable which indicate signals extracted for each activity
+the signals are:
+
+fBodyAcc
+fBodyAccJerk
+fBodyGyro
+tBodyAcc
+tBodyAccJerk
+tBodyGyro
+tBodyGyroJerk
+tGravityAcc
+
+4. Axial
+
+Each signal was measured in 3 axials ie XYZ for example
+
+tBodyGyro-X
+tBodyGyro-Y
+tBodyGyro-Z
+
+5. Mean.
+averages of the signals, this is the average of means
+over several trials, for each signal, for each activity and each individuals
+
+6. std
+this is the average of standard deviations over several trials, for each signal,
+for each activity and each individuals
