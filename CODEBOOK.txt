@@ -19,7 +19,12 @@ they are,
 "laying".
 
 3. signal:
-this is a eight level factor variable which indicate signals extracted for each activity
+this is a eight level factor variable which indicate signals extracted for each activity,
+they come from the accelerometer and gyroscope 3-axial signals, tAcc-XYZ and tGyro-XYZ, 
+These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz.
+the body linear acceleration and angular velocity were derived in time to obtain Jerk signals 
+(tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ)
+the gravity acceleration signals are seperated into tBoddyAcc-XYZ and tGravityAcc-XYZ
 the signals are:
 
 fBodyAcc
@@ -33,14 +38,14 @@ tGravityAcc
 
 4. Axial
 
-Each signal was measured in 3 axials ie XYZ for example
+Each signal was measured in 3 axials ie in XYZ direction for example
 
 tBodyGyro-X
 tBodyGyro-Y
 tBodyGyro-Z
 
 5. Mean.
-averages of the signals, this is the average of means
+averages of the signals, this is the average of means from the original data
 over several trials, for each signal, for each activity and each individuals
 
 6. std
