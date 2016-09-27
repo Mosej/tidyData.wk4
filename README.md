@@ -11,7 +11,19 @@ www.smartlab.ws
  for more infomationa about the original data visit http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
  
  the dataset includes:
- 
+ ##Run_analysis.R script
+ this code when run in r studio or terminal when the working directory is the data directory, 
+ will load the features data  which will later be used as column names for the measurements
+it will read data from the test folder, ie. read from ./test. subject(subjest_test), activity(y_test), measurments(x_test) & bind the data
+and then read data from the train folder, ie. from ./train. subject(subjest_train), activity(y_train), measurments(x_train) & bind
+it will merge train and test, extract measure of means and std for each measurement, using diplyr chain
+add row indexes, gathering, separate measurment and spread mean and std into columns using Tidyr
+
+use reshape to create averages for variables, activities and subjects
+after transforming them, reshape using dcast
+and finally write to text file
+
+add descriptive names to the activities.
  README.md
  
  CODEBOOK.txt which explains the different variables in the data
